@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_open"
+        android:icon="@drawable/ic_get_app_black_24dp"
+        android:title="@string/open"/>
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_delete_forever_black_24dp"
+        android:title="@string/delete"/>
+</menu>

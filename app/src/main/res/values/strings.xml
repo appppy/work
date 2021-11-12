@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Work</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="loading">loading…</string>
+
+    <!-- navigation -->
+    <string name="task">Task</string>
+    <string name="recent">Recent</string>
+    <string name="this_week">This week</string>
+    <string name="weekend">Weekend</string>
+    <string name="next_week">Next week</string>
+    <string name="archive">Archive</string>
+    <string name="trash">Trash</string>
+    <string name="file">File</string>
+    <string name="history">History</string>
+    <string name="chart">Chart</string>
+
+    <!-- menu -->
+    <string name="search_files">Search files</string>
+    <string name="search_tasks">Search tasks</string>
+    <string name="open">Open</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="unarchive">UnArchive</string>
+    <string name="restore">Restore</string>
+    <string name="empty">Empty Trash</string>
+    <string name="sync">Sync</string>
+    <string name="select_all">Select All</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="sort">Sort</string>
+    <string name="swap_vert">Revers</string>
+    <string name="by_name">By name</string>
+    <string name="by_date_created">By date created</string>
+    <string name="by_date_modified">By date modified</string>
+    <string name="by_start_date">By start date</string>
+    <string name="by_end_date">By end date</string>
+    <string name="by_priority">By priority</string>
+    <string name="by_rate">By rate</string>
+
+    <string name="select_color">Select Color</string>
+    <string name="edit">Edit</string>
+    <string name="info">Info</string>
+    <string name="select_priority">Select Priority</string>
+    <string name="select_progress">Select Progress</string>
+    <string name="empty_history">Empty History</string>
+    <string name="leave_history">Leave History</string>
+    <string name="open_history">Open History</string>
+    <string name="open_file">Open File</string>
+    <string name="save_file">Save File</string>
+    <string name="menu_chart">Show a pie chart</string>
+    <string name="change_schedule">Change schedule</string>
+
+    <!-- content -->
+    <string name="name">Name</string>
+    <string name="note">Note</string>
+    <string name="created_date">Created Date</string>
+    <string name="modified_date">Modified Date</string>
+    <string name="no_description">No Description</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="progress">Progress</string>
+    <string name="priority">Priority</string>
+    <string name="rate">Rate</string>
+    <string name="priority_high">High</string>
+    <string name="priority_middle">Middle</string>
+    <string name="priority_low">Low</string>
+    <string name="progress_not_start">Not start</string>
+    <string name="progress_inprogress">InProgress</string>
+    <string name="progress_completed">Completed</string>
+    <string name="progress_waiting">Waiting</string>
+    <string name="progress_postponement">Postponement</string>
+
+    <!-- Toast -->
+    <string name="undo">UNDO</string>
+    <string name="created_item">Task created.</string>
+    <string name="sync_item">Task synced.</string>
+    <string name="modified_item">Task modified.</string>
+    <string name="modified_items">%d tasks modified.</string>
+    <string name="moved_to_archive_item">Task archived.</string>
+    <string name="moved_to_archive_some_items">%d tasks archived.</string>
+    <string name="moved_to_trash_item">Task moved to Trash.</string>
+    <string name="moved_to_trash_some_items">%d tasks moved to Trash.</string>
+    <string name="empty_trash_is_done">Empty trash is done.</string>
+    <string name="unarchived_item">Task unarchived.</string>
+    <string name="unarchived_some_items">%d tasks unarchived.</string>
+    <string name="restored_item">Task restored.</string>
+    <string name="restored_some_items">%d tasks restored.</string>
+    <string name="failed_save_file">Failed!! File name is no description</string>
+    <string name="suceed_save_file">Success. Saved File.</string>
+    <string name="suceed_leave_history">Success. Leaved History.</string>
+    <string name="succed_swap_vert">Success. Revers.</string>
+    <string name="succed_by_name">Success. Sort by name.</string>
+    <string name="succed_by_date_created">Success. Sort by date created.</string>
+    <string name="succed_by_date_modified">Success. Sort by date modified.</string>
+    <string name="succed_undo">Success. Undo.</string>
+    <string name="succed_delete_file">Success. Delete File.</string>
+    <string name="empty_history_is_done">Empty history is done.</string>
+    <string name="moved_to_weekend">Task moved to "Weekend".</string>
+    <string name="moved_to_nextweek">Task moved to "Next week".</string>
+    <string name="moved_to_thisweek">Task moved to "This week".</string>
+    <string name="moved_to_inprogress">Task moved to "Inprogress".</string>
+    <string name="moved_to_completed">Task moved to "Compeleted".</string>
+    <string name="moved_to_not_start">Task moved to "Not Start".</string>
+
+    <!-- Dialog -->
+    <string name="enter_file_name">Enter the file name</string>
+    <string name="popup">POPUP</string>
+    <string name="fab">FAB</string>
+
+    <string-array name="progress_items">
+        <item>Not Start</item>
+        <item>InProgress</item>
+        <item>Completed</item>
+        <item>Waiting</item>
+        <item>Postponement</item>
+    </string-array>
+
+    <string-array name="priority_items">
+        <item>High</item>
+        <item>Middle</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="rate_items">
+        <item>Rate 1</item>
+        <item>Rate 2</item>
+        <item>Rate 3</item>
+        <item>Rate 4</item>
+        <item>Rate 5</item>
+    </string-array>
+
+</resources>

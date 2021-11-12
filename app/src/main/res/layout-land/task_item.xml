@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.view.View.OnClickListener" />
+
+        <variable
+            name="asset"
+            type="jp.osaka.cherry.work.data.Asset" />
+
+        <variable
+            name="listener"
+            type="jp.osaka.cherry.work.tasks.TaskItemUserActionsListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:descendantFocusability="blocksDescendants"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:id="@+id/layout_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/space72"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding8"
+                android:paddingBottom="@dimen/padding8">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="@dimen/padding16"
+                    android:layout_marginTop="@dimen/padding8"
+                    android:layout_marginEnd="@dimen/padding8"
+                    android:onClick="@{(view) -> listener.onTaskProgressClicked(view, asset)}" />
+
+                <LinearLayout
+                    android:id="@+id/layout_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding4"
+                    android:layout_marginTop="@dimen/padding8"
+                    android:layout_marginEnd="@dimen/padding16"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@{asset.displayName}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@{asset.note}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:tint="@color/grey_500"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/button_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{(view) -> listener.onTaskPriorityClicked(view, asset)}"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_trending_flat_black_24dp"
+                    android:tint="?colorAccent"
+                    android:visibility="@{asset.selected ? View.GONE : View.VISIBLE}" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/button_popup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{(view) -> listener.onTaskMoreClicked(view, asset)}"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:tint="?colorAccent"
+                    android:visibility="@{asset.selected ? View.INVISIBLE : View.VISIBLE}" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

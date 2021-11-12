@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/menu_sort"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_sort_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/sort">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/menu_by_date_modified"-->
+                <!--android:orderInCategory="201"-->
+                <!--android:title="@string/by_date_modified"/>-->
+            <item
+                android:id="@+id/menu_swap_vert"
+                android:orderInCategory="202"
+                android:title="@string/swap_vert"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_empty"
+        android:orderInCategory="102"
+        android:title="@string/empty_history"
+        app:showAsAction="never" />
+</menu>

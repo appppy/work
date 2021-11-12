@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding32"
+            android:paddingTop="@dimen/padding32">
+
+            <!-- ノート -->
+            <LinearLayout
+                android:id="@+id/layout_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_note_black_24dp"
+                    android:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/padding16"
+                    android:layout_marginLeft="@dimen/padding16"
+                    android:layout_marginRight="@dimen/padding16"
+                    android:layout_marginStart="@dimen/padding16"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/note_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/note"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/note_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/no_description"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 開始日 -->
+            <LinearLayout
+                android:id="@+id/layout_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_event_black_24dp"
+                    android:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/padding16"
+                    android:layout_marginLeft="@dimen/padding16"
+                    android:layout_marginRight="@dimen/padding16"
+                    android:layout_marginStart="@dimen/padding16"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/start_date_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/start_date"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/start_date_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/no_description"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 期日 -->
+            <LinearLayout
+                android:id="@+id/layout_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/padding16"
+                    android:layout_marginLeft="@dimen/padding16"
+                    android:layout_marginRight="@dimen/padding16"
+                    android:layout_marginStart="@dimen/padding16"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/end_date_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/end_date"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/end_date_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/no_description"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 進捗状況 -->
+            <LinearLayout
+                android:id="@+id/layout_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_timeline_black_24dp"
+                    android:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/padding16"
+                    android:layout_marginLeft="@dimen/padding16"
+                    android:layout_marginRight="@dimen/padding16"
+                    android:layout_marginStart="@dimen/padding16"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/progress_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/progress"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/progress_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/no_description"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 優先度 -->
+            <LinearLayout
+                android:id="@+id/layout_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_trending_up_black_24dp"
+                    android:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/padding16"
+                    android:layout_marginLeft="@dimen/padding16"
+                    android:layout_marginRight="@dimen/padding16"
+                    android:layout_marginStart="@dimen/padding16"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/priority_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/priority"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/priority_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/no_description"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 達成率 -->
+            <LinearLayout
+                android:id="@+id/layout_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:padding="@dimen/padding16"
+                    android:src="@drawable/ic_grade_black_24dp"
+                    android:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/padding16"
+                    android:layout_marginLeft="@dimen/padding16"
+                    android:layout_marginRight="@dimen/padding16"
+                    android:layout_marginStart="@dimen/padding16"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/rate_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/rate"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/rate_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/no_description"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

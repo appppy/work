@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/menu_unarchive"
+        android:icon="@drawable/ic_unarchive_white_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="@string/unarchive"/>
+    <item
+        android:id="@+id/menu_selected_all"
+        android:icon="@drawable/ic_select_all_white_24dp"
+        android:orderInCategory="101"
+        app:showAsAction="ifRoom"
+        android:title="@string/select_all"/>
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_mode_edit_white_24dp"
+        android:orderInCategory="102"
+        app:showAsAction="ifRoom"
+        android:title="@string/edit" />
+    <item
+        android:id="@+id/menu_info"
+        android:icon="@drawable/ic_info_white_24dp"
+        android:orderInCategory="103"
+        app:showAsAction="ifRoom"
+        android:title="@string/info" />
+</menu>

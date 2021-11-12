@@ -1,0 +1,141 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">仕事</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="loading">読み込み中...</string>
+
+    <!-- navigation -->
+    <string name="task">仕事</string>
+    <string name="recent">最近使用した仕事</string>
+    <string name="this_week">今週</string>
+    <string name="weekend">週末</string>
+    <string name="next_week">来週</string>
+    <string name="archive">アーカイブ</string>
+    <string name="trash">ゴミ箱</string>
+
+    <!-- title name -->
+    <string name="file">ファイル</string>
+    <string name="history">履歴</string>
+    <string name="chart">チャート</string>
+
+    <!-- menu -->
+    <!-- file -->
+    <string name="open">開く</string>
+    <string name="delete">削除</string>
+
+    <string name="search">検索</string>
+    <string name="search_files">ファイルを検索</string>
+    <string name="search_tasks">仕事を検索</string>
+    <string name="unarchive">アーカイブ解除</string>
+    <string name="restore">復元</string>
+    <string name="empty">ゴミ箱を空にする</string>
+    <string name="sync">同期する</string>
+    <string name="select_all">すべてを選択する</string>
+    <string name="copy">コピーを作成</string>
+    <string name="share">共有する</string>
+    <string name="sort">並び替え</string>
+    <string name="swap_vert">昇順/降順の切り替え</string>
+    <string name="by_name">名前順</string>
+    <string name="by_date_created">作成日順</string>
+    <string name="by_date_modified">変更日順</string>
+    <string name="by_start_date">開始日順</string>
+    <string name="by_end_date">終了日順</string>
+    <string name="by_priority">優先度順</string>
+    <string name="by_rate">レート順</string>
+
+
+    <string name="select_color">色を選択する</string>
+    <string name="edit">編集する</string>
+    <string name="info">詳細を表示する</string>
+    <string name="select_priority">優先度を選択する</string>
+    <string name="select_progress">進捗状況を選択する</string>
+    <string name="empty_history">履歴を空にする</string>
+    <string name="leave_history">履歴を残す</string>
+    <string name="open_history">履歴を開く</string>
+    <string name="open_file">ファイルを開く</string>
+    <string name="save_file">ファイルに保存する</string>
+    <string name="menu_chart">円グラフを開く</string>
+    <string name="change_schedule">日程を変更する</string>
+
+    <!-- content -->
+    <string name="name">名前</string>
+    <string name="note">メモ</string>
+    <string name="created_date">作成日</string>
+    <string name="modified_date">変更日</string>
+    <string name="no_description">記述なし</string>
+    <string name="start_date">開始日</string>
+    <string name="end_date">終了日</string>
+    <string name="progress">進捗状況</string>
+    <string name="priority">優先度</string>
+    <string name="rate">レート</string>
+    <string name="priority_high">高</string>
+    <string name="priority_middle">標準</string>
+    <string name="priority_low">低</string>
+    <string name="progress_not_start">未開始</string>
+    <string name="progress_inprogress">進行中</string>
+    <string name="progress_completed">完了</string>
+    <string name="progress_waiting">待機中</string>
+    <string name="progress_postponement">延期</string>
+
+    <!-- Toast -->
+    <string name="undo">元に戻す</string>
+    <string name="created_item">1件を作成しました</string>
+
+    <string name="sync_item">仕事を同期しました</string>
+    <string name="modified_item">1件を変更しました</string>
+    <string name="modified_items">%d件を変更しました</string>
+    <string name="moved_to_archive_item">1件をアーカイブに移動しました</string>
+    <string name="moved_to_archive_some_items">%d件をアーカイブに移動しました</string>
+    <string name="moved_to_trash_item">1件をゴミ箱に移動しました</string>
+    <string name="moved_to_trash_some_items">%d件をゴミ箱に移動しました</string>
+    <string name="empty_trash_is_done">ゴミ箱を空にしました</string>
+    <string name="unarchived_item">1件をアーカイブ解除しました</string>
+    <string name="unarchived_some_items">%d件をアーカイブ解除しました</string>
+    <string name="restored_item">1件を復元しました</string>
+    <string name="restored_some_items">%d件を復元しました</string>
+    <string name="failed_save_file">保存に失敗しました\nファイル名が入力されていません</string>
+    <string name="suceed_save_file">保存に成功しました</string>
+    <string name="suceed_leave_history">履歴を残しました</string>
+    <string name="succed_swap_vert">昇順/降順を切り替えました</string>
+    <string name="succed_by_name">名前順に並び替えました</string>
+    <string name="succed_by_date_created">作成日順に並び替えました</string>
+    <string name="succed_by_date_modified">変更日順に並び替えました</string>
+    <string name="succed_undo">元に戻しました</string>
+    <string name="succed_delete_file">ファイルを削除しました</string>
+    <string name="empty_history_is_done">履歴を空にしました</string>
+    <string name="moved_to_weekend">1件を週末に移動しました</string>
+    <string name="moved_to_nextweek">1件を来週に移動しました</string>
+    <string name="moved_to_thisweek">1件を今週に移動しました</string>
+    <string name="moved_to_inprogress">1件を進行中に移動しました</string>
+    <string name="moved_to_completed">1件を完了に移動しました</string>
+    <string name="moved_to_not_start">1件を未開始に移動しました</string>
+
+    <!-- Dialog -->
+    <string name="enter_file_name">ファイル名を入力してください</string>
+    <string name="popup">POPUP</string>
+    <string name="fab">FAB</string>
+
+    <string-array name="progress_items">
+        <item>未開始</item>
+        <item>進行中</item>
+        <item>完了</item>
+        <item>待機中</item>
+        <item>延期</item>
+    </string-array>
+
+    <string-array name="priority_items">
+        <item>高</item>
+        <item>標準</item>
+        <item>低</item>
+    </string-array>
+
+    <string-array name="rate_items">
+        <item>レート 1</item>
+        <item>レート 2</item>
+        <item>レート 3</item>
+        <item>レート 4</item>
+        <item>レート 5</item>
+    </string-array>
+
+</resources>

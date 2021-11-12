@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_priority_high"
+        android:icon="@drawable/ic_trending_up_black_24dp"
+        android:orderInCategory="300"
+        android:title="@string/priority_high"/>
+    <item
+        android:id="@+id/menu_priority_middle"
+        android:icon="@drawable/ic_trending_flat_black_24dp"
+        android:orderInCategory="301"
+        android:title="@string/priority_middle"/>
+    <item
+        android:id="@+id/menu_priority_low"
+        android:icon="@drawable/ic_trending_down_black_24dp"
+        android:orderInCategory="302"
+        android:title="@string/priority_low"/>
+</menu>

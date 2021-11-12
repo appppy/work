@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_open_file"
+        android:icon="@drawable/ic_folder_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/open_file"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_sync"
+        android:icon="@drawable/ic_sync_white_24dp"
+        android:orderInCategory="101"
+        android:title="@string/sync"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menu_sync_file"
+                android:orderInCategory="200"
+                android:title="@string/file"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_open_history"
+        android:orderInCategory="102"
+        android:title="@string/open_history"
+        app:showAsAction="never"/>
+</menu>
